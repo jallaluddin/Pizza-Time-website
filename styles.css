@@ -1,0 +1,142 @@
+/* Resetting some basic styles */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+    body {
+        line-height: 1.6;
+        background-image: url('https://t3.ftcdn.net/jpg/05/60/42/26/360_F_560422609_3nv30UESgwV4988d3rnk9yMJaGXw5x4T.jpg');
+        background-size: cover;      
+        background-repeat: no-repeat; 
+        background-position: center;  
+    }
+
+
+/* Container */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+    color: white;
+}
+
+/* Header */
+header {
+    background-color: #06090b;
+    color: #ffee30;
+    padding: 20px 0;
+}
+
+header h1 {
+    display: inline-block;
+    margin: 0;
+    
+}
+
+header nav {
+    float: right;
+    
+}
+
+header nav ul {
+    list-style: none;
+    
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #ffee30;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Main Content */
+main {
+    padding: 20px 0;
+}
+
+section {
+    padding: 40px 0;
+    border-bottom: 1px solid #fe3b3b;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: rgb(254, 250, 250);
+}
+
+.card {
+    background: #fcfcfb;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8nrRPfbd-PSVgb4QUonrkHHlR2D3PUoYQyBYwKy-O_TpZ4qlzIJWtJxU&s'); 
+    padding: 20px;
+    margin: 10px;
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    background-color: #050202;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+    header nav {
+        float: none;
+        text-align: center;
+    }
+
+    header nav ul {
+        padding: 0;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .service-cards {
+        flex-direction: column;
+    }
+    /* Order Now Button */
+#order-now {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f4f4f4; /* Light background to make the button stand out */
+}
+
+.order-now-button {
+    background-color: #ff5722; /* Bright color for visibility */
+    color: #fff;
+    padding: 25px 50px;
+    font-size: 18px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.order-now-button:hover {
+    background-color: #e64a19; /* Darker shade on hover */
+}
+
+}
